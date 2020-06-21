@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
     
     cout << "cost for taking the bus to Cosumnes River College for full time student  is $34.00\n";
     
-    costToDrive = DAY_IN_A_SEMESTER * milesPerDay * costOfGas + parkingFee + tollsPerDay;
+    costToDrive = (((DAY_IN_A_SEMESTER * milesPerDay) /milesPerGallon) * costOfGas) + parkingFee + tollsPerDay;
     
     savings = costToDrive - BUS_FARE;
     
