@@ -55,6 +55,40 @@ public:
     {
         return average;
     }
-};
+    
+    // determines and returns the students letter grade
+    std::string getLetterGrade() const
+    {
+        // initialized to empty string by class string's constructor
+        std::string letterGrade;
+        
+        if (average >= 90)
+        {
+            letterGrade = "A";
+        }
+        else if (average >= 80)
+        {
+            letterGrade = "B";
+            
+        }
+        else if (average >= 70)
+        {
+            letterGrade = "C";
+        }
+        else if (average >= 60)
+        {
+            letterGrade = "D";
+        }
+        else
+        {
+            letterGrade = "F";
+        }
+        return letterGrade;
+    }
+    
+private:
+    std::string name;
+    int average{0}; // initialize average to 0
+}; // end class Student
 
 #endif /* Student_h */
