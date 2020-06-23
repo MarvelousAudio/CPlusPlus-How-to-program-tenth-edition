@@ -97,6 +97,107 @@ public:
     {
         return year;
     }
+    
+    int calculateAge(int cYears)
+    {
+        return cYears - year;
+    }
+    
+    int calculateMaxHeartRate(int age)
+    {
+        int max;
+        
+        if (1 <= age && age < 30)
+        {
+            max = 200;
+        }
+        else if (30 <= age && age < 35)
+        {
+            max = 190;
+        }
+        else if (35 <= age && age < 40)
+        {
+            max = 185;
+        }
+        else if (40 <= age && age < 45 )
+        {
+            max = 180;
+        }
+        else if (45 <= age && age < 50)
+        {
+            max = 175;
+        }
+        else if (50 <= age && age < 55 )
+        {
+            max = 170;
+        }
+        else if (55 <= age && age < 60)
+        {
+            max = 165;
+        }
+        else if (60 <= age && age < 65)
+        {
+            max = 155;
+        }
+        else if (65 <= age && age < 70)
+        {
+            max = 150;
+        }
+        else
+        {
+            max = 150;
+        }
+        
+        return max;
+    }
+    
+    int calculateTargetHeartRate(int age)
+    {
+        int max;
+        
+        if (1 <= age && age < 30)
+        {
+            max = 170;
+        }
+        else if (30 <= age && age < 35)
+        {
+            max = 162;
+        }
+        else if (35 <= age && age < 40)
+        {
+            max = 157;
+        }
+        else if (40 <= age && age < 45 )
+        {
+            max = 153;
+        }
+        else if (45 <= age && age < 50)
+        {
+            max = 149;
+        }
+        else if (50 <= age && age < 55 )
+        {
+            max = 145;
+        }
+        else if (55 <= age && age < 60)
+        {
+            max = 140;
+        }
+        else if (60 <= age && age < 65)
+        {
+            max = 136;
+        }
+        else if (65 <= age && age < 70)
+        {
+            max = 132;
+        }
+        else
+        {
+            max = 128;
+        }
+        
+        return max;
+    }
     //=============================================================================
 private:
     string firstName;
