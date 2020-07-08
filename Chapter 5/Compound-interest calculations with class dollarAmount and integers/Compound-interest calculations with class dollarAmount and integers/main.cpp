@@ -34,7 +34,7 @@ int main(int argc, const char * argv[]) {
     
     cout << "After substracting d1 (" << d1.toString() << ") from d2 ("
     << d2.toString() << "), d2 = ";
-    d2.subract(d1); //modifies object d2
+    d2.subtract(d1); //modifies object d2
     cout << d1.toString() << "\n\n";
     
     cout << "Enter integer interest rate and divisor. for example:\n"
@@ -49,7 +49,7 @@ int main(int argc, const char * argv[]) {
     cin >> rate >> divisor;
     
     DollarAmount balanace{100000}; // initial principal amount in pennies
-    cout << "\nInitial balance: " << balance.toString() << endl;
+    cout << "\nInitial balance: " << balanace.toString() << endl;
     
     // display hearder
     cout << "\nYear" << setw(20) << "Amount on deposit" << endl;
@@ -58,11 +58,11 @@ int main(int argc, const char * argv[]) {
     for (unsigned int year{1}; year <= 10; year++)
     {
         //increase balance by rate % (i.e.., rate / divisor)
-        balance.addInterest(rate, divisor);
+        balanace.addInterest(rate, divisor);
         
         //display the year and the amount
         
-        cout << setw(4) << year << setw(20) << balance.toString() << endl;
+        cout << setw(4) << year << setw(20) << balanace.toString() << endl;
         
     }
     return 0;
