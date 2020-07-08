@@ -15,14 +15,19 @@ class Encrpyt
 {
 public:
     
-    Encrpyt(int number);
+    explicit Encrpyt(int number);
     
     
     void encrpytInput();
     
+    int getOne() const;
+    int getTen() const;
+    int getHundred() const;
+    int getThousand() const;
     
     
     void displayEncryptedInput();
+    
     
     //=================================================================
 private:

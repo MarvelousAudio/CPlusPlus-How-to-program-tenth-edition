@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9D48D90724B431FC0027D0E3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D48D90624B431FC0027D0E3 /* main.cpp */; };
 		9D48D90F24B432900027D0E3 /* Encrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D48D90D24B432900027D0E3 /* Encrypt.cpp */; };
+		9D942CAE24B53DFF00D94EE8 /* Decrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D942CAC24B53DFF00D94EE8 /* Decrypt.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		9D48D90624B431FC0027D0E3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9D48D90D24B432900027D0E3 /* Encrypt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Encrypt.cpp; sourceTree = "<group>"; };
 		9D48D90E24B432900027D0E3 /* Encrypt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Encrypt.hpp; sourceTree = "<group>"; };
+		9D942CAC24B53DFF00D94EE8 /* Decrypt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Decrypt.cpp; sourceTree = "<group>"; };
+		9D942CAD24B53DFF00D94EE8 /* Decrypt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Decrypt.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				9D48D90624B431FC0027D0E3 /* main.cpp */,
+				9D942CAC24B53DFF00D94EE8 /* Decrypt.cpp */,
+				9D942CAD24B53DFF00D94EE8 /* Decrypt.hpp */,
 				9D48D90D24B432900027D0E3 /* Encrypt.cpp */,
 				9D48D90E24B432900027D0E3 /* Encrypt.hpp */,
 			);
@@ -125,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D48D90724B431FC0027D0E3 /* main.cpp in Sources */,
+				9D942CAE24B53DFF00D94EE8 /* Decrypt.cpp in Sources */,
 				9D48D90F24B432900027D0E3 /* Encrypt.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include "Encrypt.hpp"
-
+#include "Decrypt.hpp"
 
 
 using namespace std;
@@ -16,10 +16,9 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here...
     
-    Encrpyt encrpyt1{1111};
+    Encrpyt encrpyt1{1234};
+    Decrypt decrpyt1{encrpyt1.getOne(), encrpyt1.getTen(), encrpyt1.getHundred(), encrpyt1.getThousand()};
     
-    encrpyt1.encrpytInput();
-    encrpyt1.displayEncryptedInput();
     
     
     return 0;

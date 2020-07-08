@@ -18,6 +18,9 @@ Encrpyt::Encrpyt(int number)
     {
         input = number;
     }
+    cout << number << endl;
+    encrpytInput();
+    displayEncryptedInput();
 } // end of constructor
 
 
@@ -26,12 +29,21 @@ Encrpyt::Encrpyt(int number)
 void Encrpyt::encrpytInput()
 {
     
-    
+    int swapFirstNThird;
+    int swapSecondNFourth;
     
     one = ((input % 10) + 7) % 10;
     ten = (((input % 100) / 10) + 7) % 10;
     hundred = (((input % 1000) /100) + 7) % 10;
     thousand = ((input / 1000) + 7) % 10;
+    
+    swapFirstNThird = hundred;
+    hundred = one;
+    one = swapFirstNThird;
+    
+    swapSecondNFourth = ten;
+    ten = thousand;
+    thousand = swapSecondNFourth;
     
 }// end of encrpytedInput
    
@@ -42,5 +54,36 @@ void Encrpyt::encrpytInput()
 void Encrpyt::displayEncryptedInput()
 {
     
-    cout << thousand << hundred << ten << one << endl;
+    cout << one << ten << hundred << thousand << endl;
+}
+
+
+//===========================================================================
+
+int Encrpyt::getOne() const
+{
+    return one;
+}
+
+
+//============================================================================
+
+int Encrpyt::getTen() const
+{
+    return ten;
+}
+
+//==============================================================================
+
+int Encrpyt::getHundred() const
+{
+    return hundred;
+}
+
+
+//===============================================================================
+
+int Encrpyt::getThousand() const
+{
+    return thousand;
 }
